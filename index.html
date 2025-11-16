@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WEATHER APP</title>
+    <link rel = "stylesheet" href = "style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!--Custom Font--> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sono:wght@200..800&display=swap" rel="stylesheet">
+</head>
+
+<body class = "homepage">
+    <div id = "weather-container">
+        <h2>Weather App</h2> 
+        <div class = "search">
+         <input type = "text" id="city" placeholder="Enter City">
+         <button onclick = "getWeather()">Search</button>
+        </div>
+
+        <div id = "weather-display">
+            <i class="fa-solid fa-cloud-sun" style="font-size: 150px; color:white; "></i>
+            
+        </div>
+        
+
+        <nav>
+            <button onclick="window.location.href = 'Temperature.html'">Temp</button>
+            <button onclick="window.location.href = 'Humidity.html'">Humidity</button>
+            <button onclick="window.location.href = 'UV.html'">UV</button>
+            <button onclick="window.location.href = 'WindSpeed.html'">Wind</button>
+        </nav>
+    </div>  
+    <script src ="./script.js"></script>
+
+</body>
+</html>

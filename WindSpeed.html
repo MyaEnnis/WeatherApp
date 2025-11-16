@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WINDSPEED</title>
+    <link rel = "stylesheet" href = "style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!--Custom Font--> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sono:wght@200..800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    
+    <div id = "WindSpeed-container">
+        <h2>WindSpeed</h2>
+        <div class = "search">
+            <input type = "text" id="city" placeholder="Enter City">
+            <button onclick = "getWeather()">Search</button>
+        </div>
+        
+        <div id = "wind-display">
+            <i id="wind-icon" class="fas fa-wind" style="font-size: 100px; color: rgb(0, 0, 0);"></i>
+            <p id = "WindSpeed-data">-- km/h</p>
+        </div>
+
+        <nav>
+            <button onclick="window.location.href = 'index.html'">Home</button>
+            <button onclick="window.location.href = 'Temperature.html'">Temp</button>
+            <button onclick="window.location.href = 'humidity.html'">Humidity</button>
+            <button onclick="window.location.href = 'UV.html'">UV</button>
+        </nav>
+    </div>
+    <script src ="./script.js"></script>
+
+</body>
+</html>
